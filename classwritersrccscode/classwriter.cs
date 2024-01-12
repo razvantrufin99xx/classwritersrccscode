@@ -30,7 +30,7 @@ namespace classwritersrccscode
             string s="";
             s += "\r\n";
             s += this.memoryaccestypeofclass;
-            s += " " + this.denumireofclasa;
+            s += " class " + this.denumireofclasa;
             s += "\r\n";
             s += "{";
             s += "\r\n";
