@@ -67,7 +67,8 @@ namespace classwritersrccscode
                 for (int i = 0; i < entries.Count; i++)
                 {
                     s += entries[i].writeItemAsParam();
-                    s += "\r\n";
+                        if (i < entries.Count - 1) { s += " ,"; }
+                        s += "\r\n";
                 }
 
                 }
@@ -78,7 +79,8 @@ namespace classwritersrccscode
 
                 for (int i = 0; i < entries.Count; i++)
                 {
-                    s += "this." + entries[i].writeItemAsCoInst() + "=" + entries[i].writeItemAsCoInst() + ";"; 
+                    s += "this." + entries[i].writeItemAsCoInst() + "=" + entries[i].writeItemAsCoInst() + ";";
+                   
                     s += "\r\n";
                 }
 

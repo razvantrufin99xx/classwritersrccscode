@@ -56,7 +56,7 @@ namespace classwritersrccscode
             s += " " + this.datatype;
             s += " " + this.identificator;
            
-            s += " ,";
+           
             return s;
         }
         public string writeItemAsCoInst()
