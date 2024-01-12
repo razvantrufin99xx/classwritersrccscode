@@ -40,7 +40,12 @@ namespace classwritersrccscode
             s += this.memoryaccesstype;
             s += " " + this.datatype;
             s += " " + this.identificator;
-            if(this.defaultvalue != null ) { s += "=" + this.defaultvalue;  }
+            if(this.defaultvalue != null ) {
+                s += "=";
+                if (this.datatype == "string") {s+="\""; s+= this.defaultvalue; s += "\""; }
+                if (this.datatype == "int" || this.datatype == "float" || this.datatype == "double") { s += this.defaultvalue; }
+                if (this.datatype == "bool") {  s += this.defaultvalue;  }
+            }
             s += " ;";
             return s;
         }
