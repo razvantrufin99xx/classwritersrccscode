@@ -79,7 +79,7 @@ namespace classwritersrccscode
 
                 for (int i = 0; i < entries.Count; i++)
                 {
-                    s += "this." + entries[i].writeItemAsCoInst() + "=" + entries[i].writeItemAsCoInst() + ";";
+                    s += "this." + entries[i].writeItemAsCoInst() + "=" + "p" + entries[i].writeItemAsCoInst() + ";";
                    
                     s += "\r\n";
                 }
